@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link link rel="stylesheet" href="CssHonda.css">
+    <link rel="shortcut icon" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style/ShopCss.css'%}" type="text/css"> 
+    <title>Document</title>
+</head>
+<body>
+    <div id="sidebar">
+        <h3>Categories</h3>
+        <ul>
+            <li {% if not category %} class="selected" {% endif %}>
+                <a href="{% url 'shop:product_list' %}">All</a>
+            </li>
+            {% for c in categories %}
+    <li {% if category.slug == c.slug %}class="selected"{% endif %}>
+        <a href="{{ c.get_absolute_url }}">{{ c.name }}</a>
+    </li>
+{% endfor %}
+        </ul>
+    </div>
+    <div id="main" class="container">
+        <div class="row">
+        <h1>{% if category %}{{ category.name }}{% else %}Carmodel{% endif %}</h1>
+        {% for product in products %}          
+        <div class="solaracenter">
+            <div class="dropdown"> 
+                {% load static %}    
+                <img class="imgfoto" src="{% if product.image %}{{ product.image.url }}{% else %}{% static 'img/no_image.png' %}{% endif %}" class="card-img-top" alt="..."> 
+                <div class="dropdown-content">
+                    <h5 class="card-title">{{ product.name }}</h5>
+                    <p class="card-text">{{ product.Hoursepower | slice:'20' }}</p>
+                    <p class="card-text">${{ product.price }}</p>
+                    <a href="{{ product.get_absolute_url}}" class="btn btn-primary">Перейти к товару</a>
+                </div>
+            </div>
+        </div>
+        
+        <div>
+            <p> hbuhbhbhub <br>
+            fdvdfvdfv <br>
+            sdcscdcs <br>
+            csdhnsicnd<br>
+            dscsjdcn<br>
+            sdubsncd<br>  </p>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

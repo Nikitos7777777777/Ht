@@ -1,0 +1,510 @@
+.f{
+    display: flex;
+    
+}
+.Centere{
+    display: grid;
+    place-items: center;
+    grid-template-rows: repeat(3fr) ;   
+    grid-template-columns: repeat(2,1fr);
+    row-gap : 10px;
+    background: url(/static/img/fonb.jpg);
+    width: 100%;
+    height: 100%;
+    /*grid-template-columns: 50px auto auto;
+    grid-template-rows: 500px 500px 100px ;*/
+    /*grid-template-areas:
+    "A A A A   A A A A   A A A A"
+    "B B B B   B B B B   B B E E"
+    "B B B B   B B B B   B  E E";*/
+}
+.whtis{
+    width: 130px;
+
+}
+.navig{
+    display: flex;
+    background-color: rgb(251, 238, 255);
+    box-shadow: 1px 1px 5px 3px;
+    height: 70px;
+    text-align: end;
+    flex-direction:row;
+    justify-content:end;
+    align-items: center;
+    
+}
+.bbutton{
+    border-color: rgba(249, 252, 255, 0.226);
+    background: rgba(70, 163, 255, 0.175);
+    border-style: solid;
+    border-width: 5px;
+    padding: 10px 10px ;
+    text-rendering: auto;   
+    text-align: center;
+    font-size: 20px;
+    margin: 0em;   
+    color:#a1deff; 
+    border-radius: 200px 1px 200px 1px;
+}
+ .dropdow-content {
+    display: none;
+    background-color: #a1deff;
+    min-width: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.dropdow-content a {
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+} 
+
+.marka{
+    display: grid;
+    place-items: center;
+    grid-template-rows: repeat(3,1fr) ;   
+    grid-template-columns: repeat(8,1fr);
+    
+}
+.toyota{  
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    place-items: center;
+    border-radius: 10px;
+}
+.nissan{
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    place-items: center;
+    border-radius: 10px;
+}
+.moskvich{
+    grid-column-start: 5;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    place-items: center;
+    border-radius: 10px;
+}
+.honda{
+    grid-column-start: 6;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    place-items: center;
+    border-radius: 10px;
+}
+.mrazmer{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    grid-row : span 2;
+   
+}
+.box1
+{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    place-items: center;
+    border-radius: 10px;
+    justify-self: center;
+    
+}
+.box2{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    place-items: center;
+    justify-self: start;
+    grid-row : span 2;  
+}
+.box3{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    place-items: center;
+    justify-self: center;
+}
+.box4{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    place-items: center;
+    
+}
+.box5{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    place-items: center;
+    justify-self: center;
+}
+.photoall{
+    width: 460px;
+    height: 340px;
+    border-radius: 10px;
+   
+}
+.photo1{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    
+}
+.photobox2{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;   
+}
+.morecar1{
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
+    grid-template-columns: repeat(1,1fr);   
+}
+.morecar{
+    display: grid;
+    background: url(/static/img/morecar1.jpg);
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 3px;
+    width: 100%;
+    height: 130%;   
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);   
+}
+.text{
+    font-size: 100px;
+    margin: 20% 20%;
+    text-shadow: 5px 5px 5px rgb(79, 79, 79);
+}
+.content{
+    font-size: 30px;
+    margin: 5% 20%;
+    text-shadow: 5px 5px 5px rgb(79, 79, 79);
+   
+}
+.phone1{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    align-content: center;
+    font-size: 40px;
+    justify-self: end;
+    text-shadow: 5px 5px 5px rgb(79, 79, 79);
+}
+.phone2{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    align-content: center;
+    font-size: 40px;
+    justify-self: start;
+    text-shadow: 5px 5px 5px rgb(79, 79, 79);
+
+}
+.contentgrid{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-column-end: 2;
+    align-content: start;
+}
+.opisan{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    align-content: center;
+    font-size: 40px;
+    justify-self: end;
+    text-shadow: 5px 5px 5px rgb(79, 79, 79);
+}
+.opisan1{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    align-content: center;
+    font-size: 40px;
+    justify-self: start;
+    text-shadow: 5px 5px 5px rgb(79, 79, 79);
+}
+.prodaga{
+    /* grid-template-columns: 400px 400px 400px 400px;
+    grid-template-rows: 300px */
+    display: grid;
+    place-items: center;
+    background: url(/static/img/fotoHonda1.jpg);
+    background-attachment: fixed;   
+    width: 100%;
+    height: 100%;
+    grid-template-rows: 200px 300px ;   
+    grid-template-columns: repeat(3,1fr);
+    
+    /* column-gap: 20px; */
+    
+    
+}
+.p1{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    align-items: center;
+}
+.photot{
+    width: 100%;
+    height: 300px;
+    filter: blur(5px);
+    border-radius: 10px;
+
+
+}    
+.photon{
+    width: 100%;
+    height: 300px;
+    filter: blur(5px);
+    border-radius: 10px;
+    
+}
+.photo3{
+    width: 100%;
+    height: 300px;
+    filter: blur(5px);
+    border-radius: 10px;
+}
+
+.p2{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    align-items: center;
+}
+.p3{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    align-items: center;
+    justify-self: end;
+}
+.prodtext{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    align-items: center;
+    justify-self: center;
+    color: #a1deff;
+    text-shadow: 5px 5px 5px rgb(79, 79, 79);
+    font-size: 100%;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: #a1deff;
+    min-width: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 20px 195px;
+    text-decoration: none;
+    display: block;
+}
+ .button{
+    border-color: rgba(249, 252, 255, 0.218);
+    background: rgba(70, 163, 255, 0.26);
+    border-style: solid;
+    border-width: 5px;
+    padding: 40px 30px ;
+    text-rendering: auto;   
+    display: inline-block;
+    text-align: center;
+    font-size: 30px;
+    margin: 0em;   
+    color:#a1deff; 
+    border-radius: 200px 200px 200px 200px;
+}
+
+footer{
+    background: url(/static/img/foter.jpg);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 3px;
+    display: grid ;
+    grid-template-rows: repeat(3,1fr);   
+    grid-template-columns: repeat(3,1fr);
+   
+}
+.foter{
+    width: 100%;
+    height: 100%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+} 
+
+
+
+.Textcenter{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    align-items: center;
+    justify-self: center;
+    color: #18aeff;
+    text-shadow: 5px 5px 5px rgb(79, 79, 79);
+    font-size: 20px;
+}
+.karta{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    align-items: center;
+    justify-self: center;
+   
+   
+}
+.Marka1{
+     grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    font-size: 30px; 
+    
+}
+.marka1{
+   
+    align-items: center;
+    justify-self: center;
+    text-decoration: none;
+    color: #18aeff;
+    text-shadow: 5px 5px 5px rgb(79, 79, 79);
+}
+.marka2{
+    
+    align-items: center;
+    justify-self: center;
+    text-decoration: none;
+    color: #18aeff;
+    text-shadow: 5px 5px 5px rgb(79, 79, 79);
+}
+.marka3{
+    
+    align-items: center;
+    justify-self: center;
+    text-decoration: none;
+    color: #18aeff;
+    text-shadow: 5px 5px 5px rgb(79, 79, 79);
+}
+.marka4{
+    
+    align-items: center;
+    justify-self: center;
+    text-decoration: none;
+    color: #18aeff;
+    text-shadow: 5px 5px 5px rgb(79, 79, 79);
+}
+
+.carmodel{
+    display: flex;
+    background-color: rgb(251, 238, 255);
+    box-shadow: 1px 1px 5px 3px;
+    height: 70px;
+    text-align: end;
+    flex-direction:row;
+    justify-content:end;
+    align-items: center;
+    /* width: 100%;
+    height: 100%;  */
+}
+/* .carvolum{
+    
+    width: 100%;
+    height: 100%;
+} */
+
+
+
+@media (hover)
+{
+    .photot:hover {filter: blur(0px)}
+    .photon:hover {filter: blur(0px)}
+    .photo3:hover {filter: blur(0px)}
+
+    .dropdown-content a:hover {background-color: #ddd;}
+    .dropdown:hover .dropdown-content {display: block;}
+    
+    .dropdow-content a:hover {background-color: #ddd;}
+    .dropdow:hover .dropdow-content {display: block;}
+    .bbutton:hover {background: rgba(249, 70, 255, 0.5);}
+
+    .dropdown-content:hover {transition: 1s;transform: scale(1.1);display: inline-block; overflow: hidden; display: block;}
+    .mrazmer:hover{transition: 1s;transform: scale(1.1);display: inline-block; overflow: hidden; display: block;}
+    .button:hover{background: #dddddd71;}
+
+    .opisan:hover{transition: 1s;transform: scale(0.1);display: inline-block; overflow: hidden; display: block;}  
+}
+@media screen and (max-width: 1116px){
+
+    .dropdown-content  a { padding:20% 50% ; font-size: 20%;}
+    .dropdow-content  a { padding:20% 50% ; font-size: 20%;}
+    .bbutton{padding: 20% 10%;font-size: 20%;}
+    
+    .Centere{width: 100%;height: 100%;}
+
+    .photo1{width: 100%;height: 100%;}
+    .photobox2{width: 100%;height: 100%;}
+    .photoall{width: 150px;height: 100%;}
+    .mrazmer{width: 100%;height: 100%;}
+
+    .text{font-size: 100%;}
+    .phone1{font-size: 100%;}
+    .phone2{font-size: 100%;}
+    .opisan{font-size: 100%;}
+    .opisan1{font-size: 100%;}
+    .content{font-size: 100%;}
+    
+    .prodtext{font-size: 100%}
+    .button{font-size: 100%;}
+
+    .Marka1{font-size: 100%;}
+
+    .Textcenter{font-size: 100%;}
+
+}
+

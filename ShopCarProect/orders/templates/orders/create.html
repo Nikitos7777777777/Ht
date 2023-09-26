@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link link rel="stylesheet" href="CssHonda.css">
+    <link rel="shortcut icon" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style/ShopCss.css'%}" type="text/css"> 
+    <title>Document</title>
+</head>
+    <body>
+        <div style="display: flex; flex-direction:column;
+        justify-content: center;
+        align-items: center; background: url(/static/img/app.jpg);">           
+            <div class="order-info">
+                <h3>Your order</h3>                 
+                    {% for item in cart %}                        
+                            {{ item.quantity }}x {{ item.product.name }}
+                            <div class="bbutton"><p class="bbutton" ><a href="#">${{ item.total_price }}  </a></p> </div>                         
+                    {% endfor %}
+                <p>Total: ${{ cart.get_total_price }}</p>
+            </div>
+            
+            <div style="text-align: center;color: darkviolet;">
+                <form action="." method="post" class="order-form">
+                    {{ form.as_p }}
+                    <p><input type="submit" value="Place order" class="bbutton"></p>
+                    {% csrf_token %}
+                </form>
+            </div>
+        </div>
+ </body>
+</html>
